@@ -5,7 +5,7 @@ const cryptoConfig = require('./crypto/config');
 const userRoutes = require('./routes/users');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+
 
 //Middleware para manejar datos de formulario y JSON
 app.use(express.urlencoded({ extended: true }));
@@ -22,6 +22,7 @@ app.use(session({  //objeto de session -->
 // Rutas
 app.use('/', userRoutes);
 
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Servidor en http://localhost:${PORT}`);
 });

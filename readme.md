@@ -21,12 +21,12 @@ La estructura será la siguiente:
 
 1. Configuración
 - Lo primero es hacer npm install para instalar las dependencias de package.json. √
-- Crearemos un servidor http con express en app.js √
+- Crearemos un servidor http con express en app.js 
 
 2. Paso a paso 
-- Comenzaremos a manejar los módulos y solo introduciremos lo necesario en cada uno de ellos. No se debe requerir nada que no se vaya a usar.
+- Comenzaremos a manejar los módulos y solo introduciremos lo necesario en cada uno de ellos. No se debe requerir nada que no se vaya a usar. √
 
-3. Crypto
+3. Crypto    √
 estas 2 líneas hacen que nuestro secreto sea seguro
 ``` javascript
   const secret = crypto.randomBytes(64).toString('hex');
