@@ -20,8 +20,8 @@ La estructura será la siguiente:
 - POST /logout: Endpoint para cerrar sesión y destruir la sesión.
 
 1. Configuración
-- Lo primero es hacer npm install para instalar las dependencias de package.json
-- Crearemos un servidor http con express en app.js
+- Lo primero es hacer npm install para instalar las dependencias de package.json. √
+- Crearemos un servidor http con express en app.js √
 
 2. Paso a paso 
 - Comenzaremos a manejar los módulos y solo introduciremos lo necesario en cada uno de ellos. No se debe requerir nada que no se vaya a usar.
