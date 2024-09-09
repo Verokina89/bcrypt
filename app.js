@@ -22,7 +22,7 @@ app.use(session({  //objeto de session -->
 // Rutas
 app.use('/', userRoutes);
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;  //define el puerto donde el servidor escuchará peticiones.Si no está configurada la variable de entorno PORT, se utiliza el puerto 3000 por defecto.
 app.listen(PORT, () => {
   console.log(`Servidor en http://localhost:${PORT}`);
 });
