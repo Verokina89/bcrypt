@@ -7,12 +7,20 @@ const userRoutes = require('./routes/users');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-
 //Middleware para manejar datos de formulario y JSON
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// Configuración de la sesión
+app.use(session({  //objeto de session -->
+  secret: cryptoConfig.hashedSecret,
+  resave: false,
+  saveUninitialized: true,
+  cookie: { secure: false }
+}));
 
+// Rutas
+app.use('/', userRoutes);
 
 app.listen(PORT, () => {
   console.log(`Servidor en http://localhost:${PORT}`);
